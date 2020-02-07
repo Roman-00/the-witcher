@@ -340,6 +340,7 @@ body {
   }
   .menu-button-active {
     height: 0;
+    z-index: 2;
   }
   .menu-button-active::before {
     transform: rotate(45deg);
@@ -361,6 +362,7 @@ body {
     top: 0;
     padding-bottom: 40px;
     background: #9D2929;
+    z-index: 1;
   }
   .header-active {
     display: flex;
@@ -400,5 +402,14 @@ body {
   }
   .arrow {
     right: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-container {
+    width: 80%;
+  }
+  .arrow {
+    right: -15px;
   }
 }
